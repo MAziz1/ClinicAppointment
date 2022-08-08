@@ -10,8 +10,8 @@ EXPOSE 80
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
 COPY ["ClinicAppointment/ClinicAppointment.csproj", "ClinicAppointment/"]
-COPY ["ClinicAppointment.Infrastructure/ClinicAppointment.Infrastructure.csproj", "ClinicAppointment.Infrastructure/"]
 COPY ["ClinicAppointment.Domain/ClinicAppointment.Domain.csproj", "ClinicAppointment.Domain/"]
+COPY ["ClinicAppointment.Infrastructure/ClinicAppointment.Infrastructure.csproj", "ClinicAppointment.Infrastructure/"]
 RUN dotnet restore "ClinicAppointment/ClinicAppointment.csproj"
 COPY . .
 WORKDIR "/src/ClinicAppointment"

@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClinicAppointment", "ClinicAppointment\ClinicAppointment.csproj", "{92B1C4BD-1ECB-4112-AD8F-F7FCC598496C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClinicAppointment", "ClinicAppointment\ClinicAppointment.csproj", "{92B1C4BD-1ECB-4112-AD8F-F7FCC598496C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClinicAppointment.Domain", "ClinicAppointment.Domain\ClinicAppointment.Domain.csproj", "{EA05D22A-A6F5-417F-9EE0-C5ACC505B060}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClinicAppointment.Domain", "ClinicAppointment.Domain\ClinicAppointment.Domain.csproj", "{EA05D22A-A6F5-417F-9EE0-C5ACC505B060}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClinicAppointment.Infrastructure", "ClinicAppointment.Infrastructure\ClinicAppointment.Infrastructure.csproj", "{DA4A6CAD-48D9-4FAC-B8C6-93CBF8A08DDB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClinicAppointment.Infrastructure", "ClinicAppointment.Infrastructure\ClinicAppointment.Infrastructure.csproj", "{DA4A6CAD-48D9-4FAC-B8C6-93CBF8A08DDB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{24DED7DF-E699-4AC4-9430-DA4D865611B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClinicAppointment.Domain.Test", "ClinicAppointment.Domain.Test\ClinicAppointment.Domain.Test.csproj", "{C0F58A95-9F14-4DCD-AFD4-B16EAD2C16FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClinicAppointment.Domain.Test", "ClinicAppointment.Domain.Test\ClinicAppointment.Domain.Test.csproj", "{C0F58A95-9F14-4DCD-AFD4-B16EAD2C16FA}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{66AAC0A7-E76E-4ED0-A89F-62CDD7A4E1A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,10 @@ Global
 		{C0F58A95-9F14-4DCD-AFD4-B16EAD2C16FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0F58A95-9F14-4DCD-AFD4-B16EAD2C16FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0F58A95-9F14-4DCD-AFD4-B16EAD2C16FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66AAC0A7-E76E-4ED0-A89F-62CDD7A4E1A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66AAC0A7-E76E-4ED0-A89F-62CDD7A4E1A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66AAC0A7-E76E-4ED0-A89F-62CDD7A4E1A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66AAC0A7-E76E-4ED0-A89F-62CDD7A4E1A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
