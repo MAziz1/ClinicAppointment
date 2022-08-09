@@ -4,19 +4,22 @@ services:
   clinicappointment:
     image: ${DOCKER_REGISTRY-}clinicappointment
     ports:
-      - 3002:3002 
+      - 3001:80 
     build:
       context: .
       dockerfile: ClinicAppointment\Dockerfile
+    depends_on:
+      - db
   db:
     image: postgres
     ports:
-      - 5431:5431
+      - 5432:5432
     restart: always
     environment:
-      POSTGRES_PASSWORD: P@$$w0rd
+      - POSTGRES_PASSWORD= P@$$w0rd
+      - POSTGRES_USER= postgres
+      - POSTGRES_DB= AppointmentDb
     volumes:
       - ClinicAppointment:/data/db
-
 volumes:
   ClinicAppointment:  

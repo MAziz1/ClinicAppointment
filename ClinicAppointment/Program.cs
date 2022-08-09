@@ -38,4 +38,18 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+MigrateDatabase();
+
 app.Run();
+
+
+void MigrateDatabase()
+{
+    using (var scope = app.Services.CreateScope())
+    {
+        using (var appContext = scope.ServiceProvider.GetRequiredService<AppointmentDbContext>())
+        {
+            appContext.Database.Migrate();
+        }
+    }
+}
